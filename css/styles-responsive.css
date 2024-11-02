@@ -1,0 +1,285 @@
+/* Base adjustments for all screens below 768px */
+@media only screen and (max-width: 768px) {
+    
+    html {
+        font-size: 60%; /* Base font-size for smaller screens */
+    }
+
+    :root {
+        /* Refined Font Sizes for better readability on mobile */
+        --font-size-header: 1.4rem;
+        --font-size-small: 1rem;
+        --font-size-paragraph: 1.2rem;
+        --font-size-base: 1.8rem;
+        --font-size-large: 2.5rem;
+        --font-size-xlarge: 4rem;
+        --font-size-h2: 3.5rem;
+        --font-size-h3: 2rem;
+        --font-size-phrases-p: 1.2rem;
+
+        /* Adjusted Spacing for compact layout */
+        --padding-section: 4rem 1.5rem;
+        --padding-nav: 0 2rem;
+        --gap-nav: 1.5rem;
+
+        /* SVG Dimensions */
+        --svg-width-40px: 3rem;
+        --svg-height-40px: 3rem;
+    }
+    main {
+        overflow-x: hidden;
+    }
+    .menuSwiper {
+        width: 30rem;
+    }
+
+    /* Global body styling for mobile */
+    body {
+        font-size: var(--font-size-base);
+        overflow-x: hidden; /* Prevents horizontal scroll on small screens */
+        transition: background-color var(--transition-duration) var(--transition-ease), color var(--transition-duration) var(--transition-ease);
+    }
+
+    /** Navigation Menu **/
+    header {
+        padding: 1.5rem;
+    }
+
+    section {
+        display: block;
+    }
+
+    .logo {
+        font-size: var(--font-size-large); /* Ensures logo is visible but not too large */
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* Hidden navigation links by default on mobile */
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 4.5rem;
+        left: 0;
+        width: 100%;
+        background-color: var(--color-background);
+        flex-direction: column;
+        padding: 1.5rem 0;
+        border: var(--border-2px-solid) var(--color-text);
+        border-radius: 0.5rem;
+        z-index: var(--z-index-100);
+        text-align: center;
+    }
+
+    nav ul li {
+        padding: 1rem 0;
+    }
+
+    nav ul li a {
+        font-size: var(--font-size-header);
+        color: var(--color-nav-text);
+    }
+
+    /* Burger Menu Icon */
+    .nav-toggle-label {
+        display: flex;
+        width: 3rem;
+        cursor: pointer;
+    }
+
+    .nav-toggle-label span,
+    .nav-toggle-label span::before,
+    .nav-toggle-label span::after {
+        display: block;
+        width: 100%;
+        height: 0.2rem;
+        background-color: var(--color-text);
+        transition: transform 0.3s var(--transition-ease);
+    }
+
+    .nav-toggle-label span::before {
+        content: '';
+        transform: translateY(-0.8rem);
+    }
+
+    .nav-toggle-label span::after {
+        content: '';
+        transform: translateY(0.8rem);
+    }
+
+    /* Transform icon to "X" when menu is open */
+    .nav-toggle:checked + .nav-toggle-label span {
+        background: transparent;
+    }
+
+    .nav-toggle:checked + .nav-toggle-label span::before {
+        transform: rotate(45deg) translate(0.5rem, 0.5rem);
+    }
+
+    .nav-toggle:checked + .nav-toggle-label span::after {
+        transform: rotate(-45deg) translate(0.5rem, -0.5rem);
+    }
+
+    /* Show menu when toggle is checked */
+    .nav-toggle:checked ~ ul {
+        display: flex;
+    }
+
+    /* Section Buttons */
+    .actions-container {
+        display: block;
+        text-align: center;
+    }
+
+    .actions-container a {
+        margin-top: 1rem;
+        width: 100%; /* Full-width buttons for better accessibility */
+    }
+
+    /* My Abilities Pills */
+    #skills .container {
+        width: 100%;
+    }
+
+    .skills-pills {
+        display: block;
+        gap: 1rem;
+        font-size: var(--font-size-small);
+    }
+
+    .skill-pill {
+        width: 100%;
+        padding: 1rem 2rem;
+    }
+
+    /* Disable glitch effects on mobile */
+    .glitch-overlay,
+    .text-layer {
+        display: none;
+    }
+
+    /* Optimized height for iPhone frame */
+    .iphone-frame {
+        display: contents;
+        margin-left: 0px;
+        margin-right: 0px;
+        height: 80svh;
+        border: none;
+        margin-top: 3rem;
+    }
+
+    .story-marketing-text {
+        visibility: hidden;
+    }
+
+    .form-floating > label {
+        font-size: 1rem;
+    }
+
+    section a {
+        width: 100%;
+    }
+
+    .social-media {
+        gap: 1rem;
+    }
+
+    .social-media a {
+        display: inline-flex;
+        margin-bottom: 1rem;
+    }
+
+    .scroll-btn {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .initials-container {
+        flex-direction: column;
+    }
+    .iphone-container {
+        display: block;
+    }
+
+    .swiper-slide img {
+        max-height: 400px;
+    }
+    #projects .mvs-50 {
+        margin-bottom: 1rem;
+    }
+    figure {
+        max-width: 100%;
+        overflow: auto;
+    }
+    .branding-section {
+        display: block;
+    }
+    .about-container{
+        flex-direction: column-reverse;
+    }
+    section#home {
+        align-content: center;
+    }
+}
+
+/* Additional adjustments for narrow screens (360px to 768px) */
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+    .swiper-slide {
+        max-width: 300px;
+    }
+    section, footer, header {
+        padding: 1rem;
+    }
+
+    .branding-section {
+        display: block;
+    }
+
+    .branding-section img {
+        height: 20rem;
+        margin: 1rem;
+    }
+
+    .ui-bubble-grid {
+        width: 100%;
+        overflow: auto;
+    }
+
+    .branding-section,
+    .branding-section h3,
+    .branding-section p {
+        width: 100%;
+        text-align: center;
+    }
+
+    section .content, section {
+        width: 100%;
+    }
+
+    :root {
+        /* Larger font sizes for readability */
+        --font-size-header: 2rem;
+        --font-size-small: 1.5rem;
+        --font-size-paragraph: 1.5rem;
+        --font-size-base: 2rem;
+        --font-size-large: 4rem;
+        --font-size-xlarge: 6rem;
+        --font-size-h2: 4.5rem;
+        --font-size-h3: 2.5rem;
+    }
+
+    #home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #projects {
+        margin: 0;
+        width: 100%;
+    }
+}

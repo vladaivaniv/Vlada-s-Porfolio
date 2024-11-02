@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio | Vlada Ivaniv</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta description and keywords for SEO -->
+    <meta name="description" content="Portfolio of Vlada Ivaniv, showcasing works in design and creative projects. Learn more about her design philosophy and explore recent projects.">
+    <meta name="keywords" content="Vlada Ivaniv, design portfolio, creative projects, graphic design, web design, about me, projects">
+    <meta property="og:title" content="Portfolio | Vlada Ivaniv">
+    <meta property="og:description" content="Portfolio of Vlada Ivaniv, showcasing works in design and creative projects.">
+    <meta property="og:image" content="images/ME/2.webp">
+    <meta property="og:url" content="www.vladaivaniv.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Portfolio | Vlada Ivaniv">
+    <meta name="twitter:description" content="Discover the creative works of Vlada Ivaniv, including digital and graphic design projects.">
+    <meta name="twitter:image" content="images/ME/2.webp">
+    <!-- Icons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+
+    <!-- Android Chrome Manifest -->
+    <link rel="manifest" href="images/site.webmanifest">
+
+    <!-- Alternative Icon Sizes for Different Devices -->
+    <link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="images/android-chrome-512x512.png">
+
+    <!-- Fallback Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg"  color="#000000">
+
+
+
+
+    <!-- preload google font-->
+    <link rel="preload" href="./fonts/Bespoke%20Stencil/static/OTF/BespokeStencil-Bold.otf" as="style">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" as="style">
+    <!-- CSS -->
+    <style>
+        @font-face {
+            font-family: 'Bespoke Stencil';
+            src: url('./fonts/Bespoke%20Stencil/static/OTF/BespokeStencil-Bold.otf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+    </style>
+    <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles-responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" >
+</head>
+
+<body class="text-uppercase">
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="initials-container">
+            <div class="initials">V</div>
+            <div class="loading-number">
+                <div class="loading-numbers">
+                    <span id="current-number">00</span> / <span id="max-number">10</span>
+                </div>
+                <div class="loading-text" aria-live="assertive" >LOADING<span class="dots"><span>.</span><span>.</span><span>.</span></span></div>
+            </div>
+            <div class="initials">I</div>
+        </div>
+        <div class="profession-text"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav  aria-label="Main Navigation">
+            <a href="#home" class="logo" aria-label="Home - Vlada Ivaniv">
+                <img src="images/apple-touch-icon.png" width="64" height="64">
+            </a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" tabindex="-1" aria-hidden="true" >
+            <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+                <span></span>
+            </label>
+            <ul class="navigation-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">My Abilities</a></li>
+                <li><a href="#projects">Works</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>        
+    </header>    
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Home Section -->
+        <!-- Home Section -->
+        <section id="home" class="parallax" aria-labelledby="home-heading">
+            <h1 id="home-heading"><span>Vlada Ivaniv</span><br> Digital Designer</h1>
+            <blockquote>
+                <p >"Design is not just what it looks like and feels like. Design is how it works."</p>
+            </blockquote>
+        </section>
+
+
+        <!-- Scroll Button -->
+        <a href="#about" id="scroll-btn" class="scroll-btn" role="button" aria-label="Scroll to Next Section">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <polyline points="19 12 12 19 5 12"></polyline>
+            </svg>
+        </a>
+
+        <section id="phrases" class="parallax">
+            <div class="bg"></div>
+            <h2>
+                Who Am I?
+            </h2>
+            <p id="animatedText" class="white-space-pre-line">I specialize in creating <strong>immersive digital experiences</strong> that blend aesthetics with functionality, helping brands connect with their audience on a deeper level.<br>
+                If you're ready to transform your brand or bring a fresh perspective to your project, let's create something truly exceptional together.</p>
+            <div class="actions-container">
+                <a href="#about" class = "btn-action-1" >Explore</a>
+                <a href="#contact" class = "btn-action-2" >Contact Me</a>
+            </div>
+        </section>
+
+
+        <!-- END of digital ART-->
+         <!-- Skills Section -->
+        <!-- Sección de Habilidades -->
+        <section id="skills" class="py-5 parallax" >
+            
+            <div class="container" style="z-index:2;">
+                
+                <h2 class="text-center mb-3 mb-lg-5 ">My Abilities</h2>
+                <div class="skills-pills text-center">
+                    
+                    <span class="skill-pill" data-aos="fade-up"
+                        data-aos-anchor-placement="bottom-bottom">Graphic Design</span>
+                        <span class="skill-pill" data-aos="fade-up"
+                        data-aos-anchor-placement="bottom-bottom">Photography</span>
+                                        <span class="skill-pill" data-aos="fade-up"
+                        data-aos-anchor-placement="bottom-bottom">Branding</span>
+                                        <span class="skill-pill" data-aos="fade-up"
+                        data-aos-anchor-placement="bottom-bottom">Illustration</span>
+                                        <span class="skill-pill" data-aos="fade-up"
+                        data-aos-anchor-placement="bottom-bottom">Social Meida Content</span>
+                                        <span class="skill-pill" data-aos="fade-up"
+                        data-aos-anchor-placement="bottom-bottom">Web Design</span>
+                                        <span class="skill-pill" data-aos="fade-up"
+                        data-aos-anchor-placement="bottom-bottom">Adobe Creative Suite</span>
+                                        <span class="skill-pill" data-aos="fade-up"
+                        data-aos-anchor-placement="bottom-bottom">Logo Design</span>
+                                        <span class="skill-pill" data-aos="fade-up"
+                        data-aos-anchor-placement="bottom-bottom">Packaging</span>
+                                        <span class="skill-pill" data-aos="fade-up"
+                        data-aos-anchor-placement="bottom-bottom">Content Strategy</span>
+                    <!-- Añade más habilidades según sea necesario -->
+                    
+                </div>
+            </div>
+            <div class="skills-container">
+                <div class="glitch-text">
+                    <span class="text-layer">DESIGN</span>
+                    <span class="text-layer">INNOVATE</span>
+                    <span class="text-layer">CREATE</span>
+                </div>
+            </div>
+            <div class="glitch-overlay"></div>
+        </section>
+
+        <section class="parallax" id="projects">
+            <div class="bg"></div>
+            <div class="content">
+                <h2>Selected Works</h2>
+                <p class="mvs-50">Step into my wold of design, where each project is crafted to leave a lasting impressing. From bold visuals to thoughtful details, explore how i turn ideas into impactful stories.</p>                
+                <!-- iPhone Container -->
+                <div class="iphone-container mvs-50">
+                    <div class="iphone-frame">
+                        <div class="iphone-screen">
+                            <div class="image-slider">
+                                <!-- Images for Instagram Stories -->
+                                <div class="swiper-container shortFormContentSwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide project-image"><img src="images/STORIES/1.webp" alt="Instagram Story promoting a burger with the text 'Looking for an excuse to go out? Don't miss it'"></div>
+                                        <div class="swiper-slide project-image"><img loading="lazy" src="images/STORIES/2.webp" alt="Instagram Story showing grilled meat with the text 'The best flames in Lleida are waiting for you'"></div>
+                                        <div class="swiper-slide project-image"><img loading="lazy" src="images/STORIES/3.webp" alt="Instagram Story of a PecBurger with fresh vegetables and sauce, text 'Single PecBurger: so simple, so delicious'"></div>
+                                        <div class="swiper-slide project-image"><img loading="lazy" src="images/STORIES/4.webp" alt="Instagram Story of a meat cut with the text 'Different ways to enjoy meat: rare, medium, well done'"></div>
+                                        <div class="swiper-slide project-image"><img loading="lazy" src="images/STORIES/5.webp" alt="Instagram Story featuring crispy chicken with sauce, text 'Dare to indulge! Crispy on the outside, juicy on the inside'"></div>
+                                        <div class="swiper-slide project-image"><img loading="lazy" src="images/STORIES/6.webp" alt="Instagram Story of a burger with cheese and onion rings, text 'Burgers from another world. Don’t miss it' with a UFO design"></div>
+                                        <div class="swiper-slide project-image"><img loading="lazy" src="images/STORIES/7.webp" alt="Giveaway announcement for 10 individual menus at Skoï, featuring fresh sushi served on a bamboo tray."></div>
+                                        <div class="swiper-slide project-image"><img loading="lazy" src="images/STORIES/8.webp" alt="Giveaway of 10 individual sushi menus at Skoï, featuring assorted sushi rolls" ></div>
+                                        <div class="swiper-slide project-image"><img loading="lazy" src="images/STORIES/9.webp" alt="A hearty sandwich with shredded meat and vegetables with the text 'Love can wait, hunger can't'" ></div>
+                                        <div class="swiper-slide project-image"><img loading="lazy" src="images/STORIES/10.webp" alt="Close-up of a coffee machine pouring a shot of espresso, with text about Colombian coffee from La Sucursal" ></div>
+                                        <div class="swiper-slide project-image"><img loading="lazy" src="images/STORIES/11.webp" alt="Uramaki de Pollo sushi roll with chicken, avocado, and eel sauce, close-up of textures and layers" ></div>
+                                        <div class="swiper-slide project-image"><img loading="lazy" src="images/STORIES/12.webp" alt="Stacked burger with cheese, lettuce, and onion rings on a table, with text 'Hope you found someone better than me. Bad news: there's no one better than me'" ></div>
+                                        <div class="swiper-slide project-image"><img loading="lazy" src="images/STORIES/13.webp" alt="Green drizzled cake with Oreo cookies as garnish, text encouraging two days advance ordering at La Sucursal" ></div>
+                                        <div class="swiper-slide project-image"><img loading="lazy" src="images/STORIES/14.webp" alt="Close-up of golden potato chips drizzled with a savory sauce, text emphasizing impeccable crispiness" ></div>
+                                        <div class="swiper-slide project-image"><img loading="lazy" src="images/STORIES/15.webp" alt="Cheeseburger with two patties, cheddar cheese, and truffle sauce, captioned as simple yet flavorful" ></div>
+                                        <div class="swiper-slide project-image"><img loading="lazy" src="images/STORIES/16.webp" alt="University lunch combo advertisement featuring a choice between a burger or sandwich with fries and a drink" ></div>
+                                        <div class="swiper-slide project-image"><img loading="lazy" src="images/STORIES/17.webp" alt="Opening hours of Caravista by Mateu Blanch, Tuesday to Sunday with lunch and dinner times" ></div>
+                                        <div class="swiper-slide project-image"><img loading="lazy" src="images/STORIES/19.webp" alt="Opening hours of Caravista Restaurant in Lleida, open Tuesday to Sunday for lunch and dinner on Fridays and Saturdays" ></div>
+                                        <div class="swiper-slide project-image"><img loading="lazy" src="images/STORIES/20.webp" alt="Caravista Restaurant promotion: Miniburger and beer for only 3 euros" ></div>
+                                        <div class="swiper-slide project-image"><img loading="lazy" src="images/STORIES/21.webp" alt="Takeaway rice at Palermo, Lleida, featuring fideuà" ></div>                                        
+                                        <div class="swiper-slide project-image"><img loading="lazy" src="images/STORIES/22.webp" alt="Prepare your chopsticks at Skoï Restaurant in Lleida" ></div>
+                                        <div class="swiper-slide project-image"><img loading="lazy" src="images/STORIES/23.webp" alt="Classic dessert orellada at Caravista Restaurant, Lleida" ></div>
+                                        <div class="swiper-slide project-image"><img loading="lazy" src="images/STORIES/24.webp" alt="Mochi promotion at Skoï Restaurant with the text 'I love you mochi-simo!'" ></div>
+                                        <div class="swiper-slide project-image"><img loading="lazy" src="images/STORIES/25.webp" alt="5-star review for Wheystore Gym highlighting the friendly and attentive staff" ></div>
+                                        <div class="swiper-slide project-image"><img loading="lazy" src="images/STORIES/26.webp" alt="Tremola promotion with the text 'Today is a good day not to cook'" ></div>
+                                        <div class="swiper-slide project-image"><img loading="lazy" src="images/STORIES/27.webp" alt="Opening hours of Abrasas Asador in Lleida" ></div>
+                                        <div class="swiper-slide project-image"><img loading="lazy" src="images/STORIES/28.webp" alt="Close-up of various hamburgers on a table with the text 'Just Eat It' in bold yellow letters" ></div>
+                                        <div class="swiper-slide project-image"><img loading="lazy" src="images/STORIES/29.webp" alt="Night-time view of a stylish urban sushi bar with modern lighting and a minimalist aesthetic" ></div>
+                                        <div class="swiper-slide project-image"><img loading="lazy" src="images/STORIES/30.webp" alt="Assorted sushi rolls on a wooden platter, artfully presented under low lighting" ></div>
+                                        <div class="swiper-slide project-image"><img loading="lazy" src="images/STORIES/31.webp" alt="Close-up of a delicately prepared sushi platter with a variety of fresh ingredients" ></div>
+                                        <div class="swiper-slide project-image"><img loading="lazy" src="images/STORIES/32.webp" alt="Traditional Japanese rice balls on a wooden tray, garnished with seaweed and vegetables" ></div>
+                                        <div class="swiper-slide project-image"><img loading="lazy" src="images/STORIES/33.webp" alt="Stylized dessert plate in a high-end restaurant, with intricate garnishing and lighting focused on the dessert" ></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="story-marketing-text text-align-right text-end">
+                        <h3><i> Short-Form Content </i></h3>
+                        <p>Crafting <strong>engaging</strong> short-form content that captures <strong>attention</strong> instantly. Explore my work in creating visually compelling stories and quick, <strong> impactful desgins </strong> for <i>social platforms.</i></p>
+                    </div>
+                </div>
+                
+                <!-- Swiper Section for More Projects -->
+                <div class="branding-section">
+                    <h3 class="branding-header"><i>Branding</i></h3>
+                    <p class="branding-description">Discover our latest branding projects that showcase creativity and innovation in visual identity.</p>
+                    <!-- Imágenes en una cuadrícula de 4x4 con efecto AOS -->
+                    <figure class="ui-bubble-grid">
+                        <img src="images/BRANDING/1.webp" alt="A candle with the Oquiro's Brand Logo" loading="lazy">  
+                        <img loading="lazy" src="images/BRANDING/5.webp" alt="A cup of cofee with the Kopp's Brand Logo" >
+                        <img loading="lazy" src="images/BRANDING/9.webp" alt="A bartender making a cofee inside a WOOU's Brand Cup" >
+                        <img loading="lazy" src="images/BRANDING/2.webp" alt="A takeaway cup of cofee with the Koop's Brand Logo" >
+                        <img loading="lazy" src="images/BRANDING/6.webp" alt="A cofee cup with a custom design showing AM for the moring with a cup of cofee and PM along with a glass of wine" >
+                        <img loading="lazy" src="images/BRANDING/4.webp" alt="Koop's Brand Sign on the street" >
+                        <img loading="lazy" src="images/BRANDING/7.webp" alt="A cup with the WOOU's Brand Logo" >
+                    </figure>
+                </div>
+                
+                
+
+                <div class="menu-section">
+                    <h3 class="menu-header"><i>Menu</i></h3>
+                    <p class="menu-description">Explore a curated selection of menu designs, blending aesthetics and functionality to reflect the unique character of each dining experience.</p>
+                    <div class="swiper-container menuSwiper">
+                        <div class="swiper-wrapper ">
+                            <div class="swiper-slide"><img src="images/MENU/1.webp" alt="Illustration of grilled meats titled 'Carn' with a yellow background"></div>
+                            <div class="swiper-slide"><img loading="lazy" src="images/MENU/2.webp" alt="Takeaway menu section for 'Arrosos' with prices in yellow background"></div>
+                            <div class="swiper-slide"><img loading="lazy" src="images/MENU/3.webp" alt="Comprehensive takeaway menu including fish, meat, vegan options, and desserts"></div>
+                            <div class="swiper-slide"><img loading="lazy" src="images/MENU/4.webp" alt="Takeaway menu section for 'Peix' with fish dishes and prices"></div>
+                            <div class="swiper-slide"><img loading="lazy" src="images/MENU/5.webp" alt="Illustration titled 'El Raconet Vegà' for vegan options with a leaf icon on yellow background"></div>
+                            <div class="swiper-slide"><img loading="lazy" src="images/MENU/6.webp" alt="Illustration titled 'Arrosos' with a paella drawing on yellow background"></div>
+                            <div class="swiper-slide"><img loading="lazy" src="images/MENU/7.webp" alt="Restaurant Palermo's takeaway menu cover on yellow background"></div>
+                            <div class="swiper-slide"><img loading="lazy" src="images/MENU/8.webp" alt="Cold and warm starters section with prices in takeaway menu"></div>
+                            <div class="swiper-slide"><img loading="lazy" src="images/MENU/9.webp" alt="Full menu including starters and rice dishes with prices on yellow background"></div>
+                            <div class="swiper-slide"><img loading="lazy" src="images/MENU/10.webp" alt="Meat section of the menu with lamb and duck dishes" ></div>
+                            <div class="swiper-slide"><img loading="lazy" src="images/MENU/11.webp" alt="Fish section of the menu with various seafood selections" ></div>
+                            <div class="swiper-slide"><img loading="lazy" src="images/MENU/12.webp" alt="Group menu featuring Iberian ham, seafood, and desserts" ></div>
+                            <div class="swiper-slide"><img loading="lazy" src="images/MENU/13.webp" alt="Group menu with options including squid ink croquettes and grilled prawns" ></div>
+                            <div class="swiper-slide"><img loading="lazy" src="images/MENU/14.webp" alt="Group menu with fish, veal, and vegetarian options" ></div>
+                            <div class="swiper-slide"><img loading="lazy" src="images/MENU/15.webp" alt="Group menu with Caribbean-inspired starters and premium meat options" ></div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="about-container">
+                <div class="about-image">
+                    <img loading="lazy" src="images/ME/2.webp" alt="Portrait of Vlada Ivaniv">
+                </div>
+                <div class="about-content">
+                    <h2>About Me</h2>
+                    <p>I am a passionate and innovative designer, driven by a love for digital and graphic design. I thrive on projects that push the boundaries of creativity, allowing me to bring fresh ideas to life and explore bold, new design concepts.</p>
+                </div>
+            </div>
+        </section>        
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-5 parallax" aria-labelledby="contact-form-title">
+            <div class="bg"></div>
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 id="contact-form-title" >Contact Me</h2>
+                    <h3>Let's Create Something Amazing Together</h3>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <!-- Contact Form -->
+                    <form style="max-width: 80rem;" class="">
+                        <div class="row g-4">
+                            <!-- Name -->
+                            <div class="">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                                    <label for="name">Your Name</label>
+                                </div>
+                            </div>
+                            <!-- Email -->
+                            <div class="">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+                                    <label for="email">Your Email</label>
+                                </div>
+                            </div>
+                            <!-- Message -->
+                            <div class="">
+                                <div class="form-floating">
+                                    <textarea class="form-control" id="message" name="message" placeholder="Leave your message here" style="height: 150px" required></textarea>
+                                    <label for="message">Message</label>
+                                </div>
+                            </div>
+        
+                            <!-- Submit Button -->
+                            <div class=" text-center">
+                                <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <!-- Footer -->
+    <footer id="footer" class="py-5 text-center">
+        <div class="container">
+            <!-- Social Media & Branding Section -->
+            <div class="row mb-4">
+                <div class="col-lg-4 col-md-6 d-flex flex-column justify-content-center align-items-center">
+                    <div class="mb-3">
+                        <span><a class="logo" href="#home" style="font-size: inherit;text-decoration:none; " ><img src="images/apple-touch-icon.png" width="64" height="64"></a></span>
+                    </div>
+                    <p class="footer-tagline">Crafting digital experiences that inspire.</p>
+                </div>
+    
+                <!-- Quick Links Section -->
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="mb-3">Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Let's Collaborate Section -->
+                <div class="col-lg-4 col-md-12 text-center text-md-start">
+                    <h5 class="mb-3">Let's Collaborate</h5>
+                    <p class="small mb-3">Ready to transform your brand? Let’s create something amazing together!</p>
+                    <a href="mailto:vladaivaniv23@gmail.com" class="btn btn-outline-primary btn-sm">Get in Touch</a>
+                </div>
+            </div>
+            <!-- Divider Line -->
+            <hr class="my-4">
+            <!-- Bottom Social Icons -->
+            <div class="d-flex justify-content-center mb-4 social-media">
+                <a href="https://www.instagram.com/vlada.ivaniv" target="_blank" aria-label="Instagram profile of Vlada Ivaniv" class="me-3">
+                    <i class="fa-brands fa-instagram fa-4x"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/vlada.ivaniv" target="_blank" aria-label="LinkedIn profile of Vlada Ivaniv" class="me-3">
+                    <i class="fa-brands fa-linkedin fa-4x"></i>
+                </a>
+                <a href="mailto:vladaivaniv23@gmail.com" aria-label="Email of Vlada Ivaniv">
+                    <i class="fas fa-envelope fa-4x"></i>
+                </a>
+            </div>
+    
+            <!-- Copyright and Legal Links -->
+            <p class="small">&copy; 2024 Vlada Ivaniv. All rights reserved.</p>
+            <p class="small">
+                <a href="#" class="footer-link me-3">Privacy Policy</a>
+                <a href="#" class="footer-link">Terms of Use</a>
+            </p>
+        </div>
+    </footer>
+    
+    
+    
+
+
+    <!-- Scripts -->
+    <!-- Bootstrap JS -->
+    <script src="css/bootstrap/js/bootstrap.min.js" defer></script>
+    <!-- GSAP Library (defer for better performance) -->
+    <script src="js/gsap/gsap.min.js" defer></script>
+    <!-- GSAP ScrollTrigger Plugin (defer for better performance) -->
+    <script src="js/gsap/ScrollTrigger.min.js" defer></script>
+    <!-- P5JS -->
+    <script src="js/p5/p5.min.js" defer></script>
+    <script src="js/p5.js" defer></script>
+    <!-- P5JS E -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- SWIPER JS-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js" defer></script>
+</body>
+</html>
