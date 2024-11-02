@@ -224,10 +224,7 @@
     section#home {
         align-content: center;
     }
-}
 
-/* Additional adjustments for narrow screens (360px to 768px) */
-@media only screen and (min-width: 360px) and (max-width: 768px) {
     .swiper-slide {
         max-width: 300px;
     }
@@ -281,5 +278,8 @@
     #projects {
         margin: 0;
         width: 100%;
+    }
+    .main-content {
+        overflow-x: hidden;
     }
 }
